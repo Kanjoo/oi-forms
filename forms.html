@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/form.css">
+
+  </script>
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="p-4">
+      <h1 class="page-header">FORMS & BUTTONS</h1>
+      <div class="py-4">
+        <a href="index.html" class="btn btn-info">Back to index</a>
+      </div>
+    </header>
+    <main>
+
+      <h2 class="px-4">My Forms</h2>
+      <!--Label associated with input element for good accessibility practice.-->
+
+      <form action="/register" method="POST">
+
+        <fieldset>
+          <legend>Create Form</legend>
+          <h2>Register</h2>
+          <div class="form-group">
+            <p><em>One account to access all our products!</em></p>
+            <p>Required fields are followed by <strong><abbr title="required" aria-label="required">*</abbr></strong>
+            </p>
+            <div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="user_name" required>
+              </div><br>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" required>
+              </div><br>
+
+              <div>
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" class="form-control" name="mobile" required><br>
+              </div><br>
+
+              <div>
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" required>
+              </div><br>
+              <div>
+                <button id="register_btn" type="submit" class="submit-btn">Register</button>
+              </div><br>
+        </fieldset>
+      </form><br>
+
+      <form action="/register" method="POST">
+        <fieldset>
+          <legend>Create Form</legend>
+          <h2>Add Children Form</h2>
+          <div class="form-group">
+            <label for="first_name">Name</label>
+            <input type="text" class="form-control" name="first_name" required>
+          </div><br>
+
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input type="text" class="form-control" name="surname" required>
+          </div><br>
+
+          <div>
+            <label for="date">Date of Birth</label>
+            <input type="date" class="form-control" name="born" value="30/04/2019"><br>
+          </div><br>
+
+          <div>
+            <label for="school">School</label>
+            <input type="email" class="form-control" size="50" name="child_school" multiple required><br>
+          </div><br>
+
+          <div>
+            <label for="constituency">Constituency</label>
+            <input type="password" class="form-control" name="constituency" required>
+          </div><br>
+
+          <div>
+            <button id="register_btn" type="submit" class="submit-btn">Register</button>
+          </div><br>
+        </fieldset>
+      </form><br>
+
+      <form action="/register" method="POST">
+        <fieldset>
+          <legend>Create Form</legend>
+          <h2>Add A Learner's Club</h2>
+          <div class="form-group">
+            <label for="club_name">Clubname</label>
+            <input type="text" class="form-control" name="club_name" required>
+          </div><br>
+
+          <div class="col-6">
+            <label for="number">Number of Members</label>
+            <input type="number" class="form-control" name="number" max="50"><br>
+          </div><br>
+
+          <div>
+            <label for="school">School</label>
+            <input type="email" class="form-control" size="50" name="child_school" multiple required><br>
+          </div><br>
+
+          <div>
+            <label for="constituency">Constituency</label>
+            <input type="password" class="form-control" name="constituency" required>
+          </div><br>
+
+          <div>
+            <button id="register_btn" type="submit" class="submit-btn">Register</button>
+          </div><br>
+        </fieldset>
+      </form><br>
+
+      <form class="p-4" id="input-info">
+        <fieldset>
+          <legend>Create Form</legend>
+          <h2>Start A Pod Form</h2>
+          <div class="form-group">
+            <label for="pod_name">Name of Pod</label>
+            <input type="text" class="form-control" name="pod_name" required>
+          </div><br>
+
+          <div>
+            <label for="place">Place</label>
+            <input type="email" class="form-control" size="50" name="place" multiple required><br>
+          </div><br>
+
+          <div>
+            <label for="constituency">Constituency</label>
+            <input type="text" class="form-control" name="constituency" required>
+          </div><br>
+
+          <div>
+            <button id="register_btn" type="submit" class="submit-btn">Register</button>
+          </div><br>
+        </fieldset>
+      </form><br>
+
+      <form class="p-4" id="input-info">
+        <fieldset>
+          <legend>Read Form</legend>
+          <h2>Login Form</h2>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div><br>
+
+          <div>
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="pwd" name="password" required>
+          </div><br>
+
+          <div>
+            <button id="register_btn" type="submit" class="submit-btn">Login</button>
+          </div><br>
+        </fieldset>
+      </form><br>
+
+      <!--Input/Output-->
+      <form class="p-4" id="input-info">
+        <fieldset>
+          <legend>Update Form</legend>
+          <h2>Input Information</h2>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="user_name" required><br>
+          </div><br>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" size="50" id="email" name="user_email" multiple required><br>
+          </div><br>
+
+          <div class="col-3">
+            <label for="tel">Telephone:</label>
+            <input type="tel" class="form-control" id="tel" name="user_mobile" required><br>
+          </div><br>
+
+          <div class="col-4">
+            <label for="url">url:</label>
+            <input type="url" class="form-control" id="url" name="user_url" pattern="https://.*" size="30" required><br>
+          </div><br>
+
+          <div class="col-3">
+            <label for="date">Date of Birth:</label>
+            <input type="date" class="form-control" name="born" value="30/04/2019"><br>
+          </div><br>
+
+          <div class="col-5">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" name="password"><br>
+          </div><br>
+
+          <div class="col">
+            <label for="avatar">Upload a profile picture</label>
+            <input type="file" name="avatar" accept="image/png, image/jpeg"><br>
+          </div><br>
+
+          <div class="col-6">
+            <label for="number">Number</label>
+            <input type="number" class="form-control" name="number" max="50"><br>
+          </div><br>
+
+          <div>
+            <button id="register_btn" type="submit" class="submit-btn">Submit</button>
+          </div><br>
+
+          <div class="col-5">
+            <label for="color">Color</label>
+            <input type="color" class="form-control mb-2" name="color" value="#19c6ff"><br>
+          </div><br>
+
+          <div class="col-auto">
+            <label for="file">File progress</label>
+            <progress id="file" max="100" value="85">85%</progress><br>
+          </div><br>
+
+          <div class="col-auto">
+            <label for="time">Time</label>
+            <input type="time" id="time" min="13:00" max="19:30" step="900" class="form-control"><br>
+          </div><br>
+
+          <div class="form-row">
+            <label for="msg">Comments</label>
+            <textarea name="msg" class="form-control" id="msg" cols="30" rows="10"></textarea>
+          </div><br>
+
+          <div>
+            <button id="register_btn" type="submit" class="submit-btn">Contact Us</button>
+          </div><br>
+        </fieldset><br>
+      </form><br>
+
+      <!--Output-->
+
+      <form oninput="result.value = rangelevel.valueAsNumber">
+        <fieldset>
+          <legend>Output</legend>
+          <label for="range">Range:</label>
+          <input type="range" name="rangelevel" min="100" max="1000" value="100">
+          <output for="range" name="result">100</output>/1000
+          <br>
+        
+        <div>
+          <button id="register_btn" type="submit" class="submit-btn">Reset</button>
+        </div><br>
+        </fieldset>
+      </form><br>
+
+      <!--Select-->
+      <form class="p-4" id="select-info">
+        <fieldset>
+          <legend>Radio Buttons</legend>
+          <label for="radio">Female</label>
+          <input type="radio" name="gender" value="F" checked><br>
+
+          <label for="radio">Male</label>
+          <input type="radio" name="gender" value="M">
+        </fieldset><br>
+
+        <fieldset>
+          <legend>Dropdown Select Menu</legend>
+
+          <label for="omaanda">Omu?</label>
+          <select class="custom-select">
+            <option selected>Eyanda roye?</option>
+            <option>kuejuva</option>
+            <option>kuenambura</option>
+            <option>kuatjivi</option>
+            <option>kuatjiti</option>
+            <option>kuauti</option>
+            <option>kuendjandje</option>
+            <option>kuahere</option>
+            <option>kuenatja</option>
+            <option>kuendata</option>
+          </select>
+
+          <label for="Otuzo">Oruzo rwo?</label>
+          <select class="custom-select">
+            <option selected>Oruzo rwoye?</option>
+            <option>Ohorongo</option>
+            <option>Onguangoro</option>
+            <option>Esembi</option>
+            <option>Omuhinaruzo</option>
+            <option>Ondanga</option>
+            <option>Ohambandarua</option>
+            <option>Otjihaviria</option>
+            <option>Otjiporo</option>
+            <option>Onguanjimi</option>
+            <option>Onguanjimi</option>
+            <option>Otjitjindua</option>
+            <option>Omakoti</option>
+            <option>Onguejuva</option>
+            <option>Ondjiva</option>
+            <option>Okanene</option>
+            <option>Onguatjindu</option>
+            <option>Omuko</option>
+            <option>Ondoto</option>
+            <option>Ombongora</option>
+            <option>Onguakavero</option>
+            <option>Onguangemba</option>
+            <option>Okasama</option>
+            <option>Ozombapa</option>
+            <option>Omarunga</option>
+            <option>Onguatjija</option>
+            <option>Ondondere</option>
+            <option>Otjirungu</option>
+          </select>
+        </fieldset><br>
+
+        <div>
+          <button id="register_btn" type="submit" class="submit-btn">Edit</button>
+        </div><br>
+
+        <div>
+          <button id="register_btn" type="submit" class="submit-btn">Cancel</button>
+        </div><br>
+
+        <div>
+          <button id="register_btn" type="submit" class="submit-btn">Delete</button>
+        </div><br>        
+      </form><br>
+
+      <div class="py-4">
+        <a href="forms.html" class="btn btn-info">Back to top</a>
+    </main>
+    <footer class="d-flex flex-row">
+      <p id="copyright" class="pr-5">&copy; 2020 by KM. All rights reserved.</p>
+      <p>With ❤ from Otjozondjupa by <img id="stamp" src="logos/Innate-Stamp.png" alt="Innate-Stamp" width="25px"
+          height="30px"></p>
+    </footer>
+  </div>
+</body>
+
+</html>
